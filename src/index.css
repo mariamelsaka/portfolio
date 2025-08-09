@@ -1,0 +1,153 @@
+/* this for all the app */
+/* ---------------------------------- */
+@import "tailwindcss";
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.container-fluid {
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+*{
+  /* font-family: "Berlin Sans FB"; */
+  font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* dark & light mode */
+
+:root {
+  --btn-all-pro:#E5E7EB;
+  --btn-all-pro-hover:#D1D5DB;
+  --text-all-pro:black;
+  --body_background: #FFFFFF;     /* Clean white background */
+  --body_color: #1A1A2E;          /* Dark navy-purple text */
+  --header-bg:#F9FAFB;
+  --section-color: #F9FAFB;       
+  --section-color-about: #F9FAFB;       
+  --card-color: #FFFFFF;          /* White cards */
+  --card-pro-color: #F3F4F6;
+  --btn_color: #7C3AED;           /* Purple accent */
+  --circlSkill-bg:#F3F4F6;
+  --border_color: #B8B8C6;        /* Soft gray border with slight purple tint */
+  --text_color: #7C3AED;          /* Primary purple */
+  --text-light-color: #B18AF4;    /* Soft lavender */
+  --text-dark-color: #6316E9;     /* Rich purple */
+  --text-gray: #6B7280;           /* Tailwind's gray-500 */
+  --text-white: #FFFFFF;          /* White text */
+  --input-bg: white;              /* White input background */
+  --input-border: #D1D5DB;        /* Tailwind gray-300 */
+  --input-text: #1A1A2E;          /* Dark navy-purple text */
+  --input-placeholder: #9CA3AF;   /* Tailwind gray-400 */
+}
+
+[data-theme="dark"] {
+ --btn-all-pro: #7C3AED;         /* base purple */
+  --btn-all-pro-hover: #6128c2;   /* richer, darker hover */
+  --text-all-pro:white;
+  --body_background: #1A1A2E;    
+  --header-bg: #1A1A2E;    
+  /* --body_background: #0F0F1A;      */
+  --body_color: #EAE6F9;          /* Light text with slight purple tint */
+  --section-color: #0F0F1A;
+  --project-bg:#0F0F1A;
+  /* --section-color: #1A1A2E;     */
+  --section-color-about: #161627;
+  --card-color: #161627;          /* Slightly lighter than background for contrast */
+  --card-pro-color: #161627;          /* Slightly lighter than background for contrast */
+  --circlSkill-bg:#4B3F72;
+  --btn_color: #9D4EDD;           /* Vibrant purple button color */
+  --border_color: #4B3F72;        /* Subtle muted purple border */
+  --text_color: #C77DFF;          /* Accent purple */
+  --text-light-color: #E0B3FF;    /* Light lavender for secondary text */
+  --text-dark-color: #7B2CBF;     /* Deep rich purple */
+  --text-gray: #A1A1B5;           /* Soft gray for muted text */
+  --text-white: #FFFFFF;          /* Pure white */
+    --input-bg: #1F1F2E;            /* Dark, but lighter than section bg */
+  --input-border: #4B3F72;        /* Matches dark border_color */
+  --input-text: #EAE6F9;          /* Light text */
+  --input-placeholder: #A1A1B5;   /* Soft gray placeholder */
+}
+
+[data-theme="light"] {
+  --btn-all-pro:#E5E7EB;
+  --btn-all-pro-hover:#D1D5DB;
+  --text-all-pro:black;
+  --body_background: #FFFFFF;     /* Clean white background */
+  --body_color: #1A1A2E;          /* Dark navy-purple text */
+  --header-bg:#F9FAFB;
+  --section-color: #F9FAFB;       
+  --section-color-about: #F9FAFB;       
+  --card-color: #FFFFFF;          /* White cards */
+  --card-pro-color: #F3F4F6;
+  --btn_color: #7C3AED;           /* Purple accent */
+  --circlSkill-bg:#F3F4F6;
+  --border_color: #B8B8C6;        /* Soft gray border with slight purple tint */
+  --text_color: #7C3AED;          /* Primary purple */
+  --text-light-color: #B18AF4;    /* Soft lavender */
+  --text-dark-color: #6316E9;     /* Rich purple */
+  --text-gray: #6B7280;           /* Tailwind's gray-500 */
+  --text-white: #FFFFFF;          /* White text */
+  --input-bg: white;              /* White input background */
+  --input-border: #D1D5DB;        /* Tailwind gray-300 */
+  --input-text: #1A1A2E;          /* Dark navy-purple text */
+  --input-placeholder: #9CA3AF;   /* Tailwind gray-400 */
+}
+
+body{
+    background-color: var(--body_background);
+    color:var(--body_color);
+}
+/* dark & light mode */
+
+/* 🔹 Responsive Adjustments */
+/* Mobile navbar open styling - up to 767px sm */
+@media (max-width: 767px) {
+  html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden; /* Optional: hides horizontal scroll if something overflows */
+    }
+  .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  }
+}
+
+/* Tablet - 768px to 1024px md */
+@media (min-width: 768px) and (max-width: 1024px) {
+  html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden; /* Optional: hides horizontal scroll if something overflows */
+    }
+  .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  }
+}
+
+
+/* Laptop - 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Optional: hides horizontal scroll if something overflows */
+  }
+    
+}
+
+/* Desktop - 1281px and up */
+@media (min-width: 1281px) {
+
+}
