@@ -49,7 +49,7 @@ export const dataProject: ProjectTypes[] = [
   {
     title: "Simple Website — Home & Contact Us",
     image:IMAGES.webTask,
-    description:"A clean, responsive website featuring a welcoming landing page and a contact form for user inquiries. Highlights include smooth navigation, accessible structure, and a modern, mobile-friendly design.",
+    description:"This was my very first task — a clean, responsive website featuring a welcoming landing page and a contact form for user inquiries. Highlights include smooth navigation, accessible structure, and a modern, mobile-friendly design.",
     category:"landing-page",
     liveDemoLink:"https://mariamelsaka.github.io/web-design-task/",
     githubLink:"https://github.com/mariamelsaka/web-design-task",
@@ -58,14 +58,14 @@ export const dataProject: ProjectTypes[] = [
   {
     title: "Online Quiz Maker",
     image:IMAGES.quizMaker,
-    description:"A platform where admins can create quizzes via a dashboard, and users can take quizzes and view their progress. The project includes user authentication and authorization. Built using front-end technologies with optional Laravel back-end integration.",
+    description:"A platform where admins can create quizzes via a dashboard, and users can take quizzes and view their progress. The project includes user authentication and authorization. Built using front-end technologies with optional Laravel back-end. \n Note: The deployed version does not support admin dashboard",
     category:"js-app",
     githubLink:"https://github.com/mariamelsaka/quiz-maker",
     liveDemoLink:"https://mariamelsaka.github.io/quiz-maker/" ,
-    skills:["html","css","bootstrap 5","javascript"]   
+    skills:["html","css","bootstrap 5","javascript","PHP","Laravel"]   
   },
   {
-    title: "Graduation Project: \n Arabic Sign Language Educational Website",
+    title: "Graduation Project: Arabic Sign Language Educational Website",
     image:IMAGES.gradPro,
     description:"An AI-powered educational platform that teaches Arabic sign language through videos, articles, and a real-time quiz using camera input. Built with a CNN model (ResNet architecture) integrated via TensorFlow, OpenCV, and MediaPipe to provide interactive learning and gesture recognition.",
     category:"web-app",
@@ -104,6 +104,6 @@ export const CustomServices: ServicesIprop[] = [
   {
     title: "Front-End Mentoring / Workshops",
     icon: BsPeople, // Represents mentoring, workshops, and teamwork
-    description: "I led front-end workshops for 15+ students, focusing on HTML, CSS, and JavaScript fundamentals. Sessions included hands-on guidance, live coding, and real-world project building."
+    description: "I led front-end workshops for 50+ students, focusing on HTML, CSS, and JavaScript fundamentals. Sessions included hands-on guidance, live coding, and real-world project building."
   }
 ];

@@ -59,7 +59,7 @@ const NavBar = () => {
         <div className="flex items-center justify-between w-full text-[var(--body_color)]">
           <div className="font-bold text-2xl whitespace-nowrap">mariam elsaka</div>
           {/* this shown only in small screen */}
-          <DarkMode className="lg:hidden" />
+
           <button
             type="button"
             className="block lg:hidden rounded focus:outline-none focus:ring-2 focus:ring-[#20B486]"
@@ -70,7 +70,7 @@ const NavBar = () => {
           </button>
           {/* Center: Nav Links */}
           <ul className={`${isCollapsed ? 'hidden' : 'block'} md:flex gap-6 items-center text-[var(--body_color)]`}>
-            
+
             <li className={activeLink === "/" ? "active" : ""}>
               <a href="/" onClick={() => handleLinkClick("/")}>home</a>
             </li>
@@ -87,7 +87,7 @@ const NavBar = () => {
 
               {/* Right: Dark mode + Button */}
               <div className="flex items-center gap-4 ml-auto md:ml-4">
-                <DarkMode className="hidden sm:block"/>
+               <DarkMode />
                 <a href="/#Contact" >
                   <Button
                     className="hidden lg:block"

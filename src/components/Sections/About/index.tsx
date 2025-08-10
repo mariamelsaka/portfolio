@@ -10,6 +10,7 @@ import Button from '../../ui/Button';
 import Experience from './Experience';
 import Paragraph from '../../ui/Paragraph';
 import Skills from './Skills';
+
 const About = () => {
   return (
     <div id="About" className='bg-[var(--body_background)]'>
@@ -37,7 +38,7 @@ const About = () => {
           <div className="md:w-fit w-full" >
             <Paragraph>summary</Paragraph>
             <p className='text-gray-600 p-4  space-y-4  leading-relaxed'>
-              I am a Front-End Developer with over 2 years of experience specializing in HTML, CSS, JavaScript, and Bootstrap.
+              I am a Front-End Developer with over 2 years of experience specializing in HTML, CSS,TailwindCss, JavaScript, and Bootstrap.
               In my current role as a Software Specialist-DXP at Giza Systems, I work on large-scale, enterprise-level projects
               using Kore.ai, Liferay, and jbpm, improving user engagement and system efficiency. Recently, I began working with
               React/Ts, building my first personal project to deepen my expertise in this framework. I have successfully delivered
@@ -52,7 +53,7 @@ const About = () => {
                   <li>Implemented and integrated AI-powered chatbots using Kore.ai, enhancing customer service response time by 50%.</li>
                 </Experience>
                 <Experience position="EBS Intern - DXP Team" companyName="giza system Aug 2023 - Feb 2024">
-                  <li>Trained extensively on Liferay and Camunda workflow tools, contributing to successful implementation of +3 tasks.</li>
+                  <li>Trained extensively on Liferay and Camunda workflow tools, contributing to successful implementation of +3 projects.</li>
                   <li> Participated in RPA training, Completed RPA training and contributed to automating workflow processes,reducing manual tasks by 80%.</li>
                   <li> Attended more than +15 soft skills development sessions, enhancing team collaboration and communication across 5 cross-functional teams</li>
                 </Experience>
