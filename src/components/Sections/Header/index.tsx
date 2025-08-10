@@ -15,7 +15,8 @@ const Header = () => {
             Currently expanding my expertise through personal projects 
             and new technologies.</p>
           <div className="flex gap-5 md:ml-0 ml-[2.2em]">
-            <a href="http://localhost:5173/mariam elsaka cv.pdf" download>
+            <a href="https://6897d0c42932494d9e583ad1--peaceful-muffin-b394bb.netlify.app/mariam%20elsaka%20cv.pdf" download>
+            {/* <a href="http://localhost:5173/mariam elsaka cv.pdf" download> */}
               <Button className="mt-10 flex flex-row gap-3">hire me <FaChevronRight className="mt-1.5" /></Button>
             </a>
             <a href="/#About" >

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { dataProject } from "../../../data/index"
 import Button from "../../ui/Button"
 import DarkMode from "../../ui/DarkMode";
@@ -11,12 +12,12 @@ const AllProjects = () => {
         <div className="md:p-[10em] p-[1.2em] pt-[6em]  bg-[var(--project-bg)]">
             <div className="flex md:gap-[38.5em] gap-[2em] text-nowrap mb-[4em]">
                 <Paragraph className="!text-3xl md:mt-0 mt-2">all projects</Paragraph>
-                <a href="/">
+                <Link  to="/">
                     <Button className="!bg-[var(--btn-all-pro)] hover:!bg-[var(--btn-all-pro-hover)] !text-[var(--text-all-pro)] flex font-semibold !p-[1em]">
                         <AiOutlineHome className="mt-1 mr-2 font-bold text-lg" />
                         back to home
                     </Button>
-                </a>
+                </Link>
             </div>
             <div className="grid grid-cols-12 gap-5">
                 {

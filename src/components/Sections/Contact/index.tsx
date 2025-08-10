@@ -17,7 +17,7 @@ const Contact = () => {
       
       <div className="grid grid-cols-12 md:gap-[3em] gap-[2em] mt-[2em] md:p-3 pl-[2em]">
         
-        <div className="col-span-12 md:col-span-4  p-[2em] w-fit md:w-full h-full bg-[var(--card-color)] rounded-lg shadow-lg">
+        <div className="col-span-12 md:col-span-4  p-[2em] w-fit md:w-full h-full bg-[var(--card-contact-color)] rounded-lg shadow-lg">
           <Paragraph className="mb-[1em]">Contact information</Paragraph>
           <AboutDetails isBold={false}  label="email" value="mariamalaaelsaka@icloud.com" icon={AiOutlineMail} />
           <AboutDetails isBold={false}  label="phone" value="+20 01015564573" icon={FaPhoneAlt} />
@@ -33,7 +33,7 @@ const Contact = () => {
           </div>
 
         </div>
-        <div className="col-span-12 md:col-span-8 w-[91%] md:w-full h-full p-[2em] bg-[var(--card-color)] rounded-lg shadow-lg">
+        <div className="col-span-12 md:col-span-8 w-[91%] md:w-full h-full p-[2em] bg-[var(--card-contact-color)] rounded-lg shadow-lg">
           <Paragraph>send me a message</Paragraph>
           {/* <Form onSubmit={handleSubmit(onSubmit)}> */}
           <Form >
@@ -41,7 +41,6 @@ const Contact = () => {
               <div className="flex flex-col w-full">
                 <Label htmlFor="name">name</Label>
                 <Input
-                className=""
                   type="text"
                   // {...register("identifier")}
                   name="name"

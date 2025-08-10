@@ -3,6 +3,7 @@ import { dataProject } from "../../../data/index"
 import ProjectCard from "./ProjectCard";
 import Button from "../../ui/Button";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -38,11 +39,11 @@ const Projects = () => {
           filteredProjects.map((project, idx) => {
             counter++;
             if (counter > 6) {
-              return <a href="/projects" key={idx}>
+              return <Link to="/projects" key={idx}>
                 <Button className="text-nowrap relative md:left-[31em] left-[6em]   md:top-[2em]">
                   view all projects
                 </Button>
-              </a>
+              </Link>
             }
             return <ProjectCard
               key={idx}
