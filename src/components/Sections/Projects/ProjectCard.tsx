@@ -39,7 +39,7 @@ const ProjectCard = ({
         </div>
         </div> */}
         <div
-          className="hidden md:flex absolute inset-0 bg-gradient-to-t from-black/70 to-transparent 
+          className=" md:flex absolute inset-0 bg-gradient-to-t from-black/70 to-transparent 
                         opacity-0 group-hover:opacity-100 group-active:opacity-100 
                         transition-opacity  items-end justify-start p-4"
         >
@@ -71,7 +71,7 @@ const ProjectCard = ({
     <p className="text-sm text-gray-500">{category}</p>
 
     {/* Icons - only small screens */}
-    <div className="flex gap-2 lg:hidden">
+    {/* <div className="flex gap-2 lg:hidden">
       <a
         href={githubLink}
         target="_blank"
@@ -90,7 +90,7 @@ const ProjectCard = ({
       >
         <FaExternalLinkAlt size={12} />
       </a>
-    </div>
+    </div> */}
   </div>
 
   {/* Title */}

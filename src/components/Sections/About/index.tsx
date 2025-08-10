@@ -25,8 +25,8 @@ const About = () => {
           <AboutDetails label="location" value="Egypt, giza " icon={FaLocationDot} />
           <AboutDetails label="experience" value="2 years" icon={HiOutlineCalendarDateRange} />
           <AboutDetails label="specialization"  value="Front end develoment using react, liferay developer" icon={FaLaptopCode} />
-          <a href="https://6897d0c42932494d9e583ad1--peaceful-muffin-b394bb.netlify.app/mariam%20elsaka%20cv.pdf" download>
-          {/* <a href="http://localhost:5173/mariam elsaka cv.pdf" download> */}
+          {/* <a href="https://6897d0c42932494d9e583ad1--peaceful-muffin-b394bb.netlify.app/mariam%20elsaka%20cv.pdf" download> */}
+          <a href="/mariam-elsaka-cv.pdf" download>
           <Button className='!w-full !mt-[2em]'>download resume</Button>
           </a>
           

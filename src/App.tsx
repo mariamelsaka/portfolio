@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import NavBar from "./components/Layout/NavBar";
 import Footer from "./components/Layout/Footer/Footer";
 import Project from "./pages/Project";
+import ScrollToTopButton from "./components/ScrollToTopButton";
+import Animate from "./components/Animate";
 
 function App() {
   return (
@@ -11,12 +13,17 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-            <NavBar />
-            <Home />
+            <NavBar />       
+                <Home />
             <Footer />
+            <ScrollToTopButton/>
             </>
           } />
-          <Route path="/projects" element={<Project />} />
+          <Route path="/projects" element={
+            <Animate>
+                <Project />
+            </Animate>  
+            } />
         </Routes>    
     </Router>
   );
