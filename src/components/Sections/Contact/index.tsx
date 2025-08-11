@@ -35,59 +35,32 @@ const Contact = () => {
         </div>
         <div className="col-span-12 md:col-span-8 w-[91%] md:w-full h-full p-[2em] bg-[var(--card-contact-color)] rounded-lg shadow-lg">
           <Paragraph>send me a message</Paragraph>
-          {/* <Form onSubmit={handleSubmit(onSubmit)}> */}
           <Form >
             <div className="md:flex gap-2">
               <div className="flex flex-col w-full">
                 <Label htmlFor="name">name</Label>
                 <Input
-                  type="text"
-                  // {...register("identifier")}
-                  name="name"
-                  id="name"
-                  placeholder="enter your name"
-                  autoComplete="name"
-                  required
+                type="text" name="from_name" placeholder="Your Name" required
                 />
               </div>
-
-              {/* {errors["identifier"] && <InputErrorMessage msg={errors["identifier"]?.message} />} */}
 
               <div className="flex flex-col w-full">
                 <Label htmlFor="email-login">Email</Label>
                 <Input
-                  type="email"
-                  // {...register("identifier")}
-                  name="identifier"
-                  id="email-login"
-                  placeholder="name@example.com"
-                  autoComplete="email"
-                  required
+                 type="email" name="from_email" placeholder="Your Email" required
                 />
               </div>
-
-              {/* {errors["identifier"] && <InputErrorMessage msg={errors["identifier"]?.message} />} */}
             </div>
             <Label htmlFor="subject">subject</Label>
             <Input
-              type="text"
-              // {...register("identifier")}
-              name="subject"
-              id="subject"
-              autoComplete="subject"
-              placeholder="project title"
-              required
+              type="text" name="subject" placeholder="Subject" required
             />
-            {/* {errors["identifier"] && <InputErrorMessage msg={errors["identifier"]?.message} />} */}
-            {/* {errors["email"] && <InputErrorMessage msg={errors["email"]?.message} />} */}
+
             <Label htmlFor="message">message</Label>
-            <Textarea title="message" id="message"
-              aria-label="Description of the message"
-              placeholder="describe your project needs"
-              // {...register("description")} 
+            <Textarea name="message" placeholder="Your Message" required
               rows={3}
-              required></Textarea>
-            {/* {errors["description"] && <InputErrorMessage msg={errors["description"]?.message} />} */}
+              ></Textarea>
+           
           </Form>
         </div>
       </div>

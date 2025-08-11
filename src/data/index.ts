@@ -59,8 +59,8 @@ export const dataProject: ProjectTypes[] = [
     title: "Online Quiz Maker",
     image:IMAGES.quizMaker,
     description:"A platform where admins can create quizzes via a dashboard, and users can take quizzes and view their progress. The project includes user authentication and authorization. Built using front-end technologies with optional Laravel back-end. \n Note: The deployed version does not support admin dashboard",
-    category:"js-app",
-    githubLink:"https://github.com/mariamelsaka/quiz-maker",
+    category:"web-app",
+    githubLink:"https://github.com/mariamelsaka/quizApp",
     liveDemoLink:"https://mariamelsaka.github.io/quiz-maker/" ,
     skills:["html","css","bootstrap 5","javascript","PHP","Laravel"]   
   },
