@@ -60,6 +60,59 @@ const NavBar = () => {
           <div className="font-bold text-2xl whitespace-nowrap">mariam elsaka</div>
           {/* this shown only in small screen */}
 
+
+          {/* Right: Dark mode + Button */}
+
+
+
+          {/* Center: Nav Links */}
+          <ul className={`${isCollapsed ? 'hidden' : 'block'} md:flex gap-6 items-center text-[var(--body_color)]`}>
+
+            <li className={activeLink === "/" ? "active" : ""}>
+              <a href="/" onClick={() => {
+                handleLinkClick("/");
+                setIsCollapsed(true); // Close menu after click
+              }}>home</a>
+            </li>
+            <li className={activeLink === "/projects" ? "active" : ""}>
+              <a href="/#Projects" onClick={() => {
+                handleLinkClick("/projects")
+                setIsCollapsed(true);
+              }
+              }>projects</a>
+            </li>
+
+            <li className={activeLink === "/about" ? "active" : ""}>
+              <a href="/#About" onClick={() => {
+                handleLinkClick("/about")
+                setIsCollapsed(true);
+              }
+              }>about</a>
+            </li>
+            <li className={activeLink === "/contact" ? "active" : ""}>
+              <a href="/#Contact" onClick={() => {
+                handleLinkClick("/contact");
+                setIsCollapsed(true);
+              }}>contact</a>
+            </li>
+
+
+          </ul>
+
+          <div className="flex items-center gap-4 ml-auto md:ml-4">
+            <DarkMode />
+
+            <a href="/#Contact" >
+              <Button
+                className="hidden lg:block"
+                type="button"
+                title="btn-light-dark"
+              >
+                let's talk
+              </Button>
+            </a>
+
+          </div>
           <button
             type="button"
             className="block lg:hidden rounded focus:outline-none focus:ring-2 focus:ring-[#20B486]"
@@ -68,40 +121,6 @@ const NavBar = () => {
           >
             {isCollapsed ? <FaBars /> : <FaTimes />}
           </button>
-          {/* Center: Nav Links */}
-          <ul className={`${isCollapsed ? 'hidden' : 'block'} md:flex gap-6 items-center text-[var(--body_color)]`}>
-
-            <li className={activeLink === "/" ? "active" : ""}>
-              <a href="/" onClick={() => handleLinkClick("/")}>home</a>
-            </li>
-            <li className={activeLink === "/projects" ? "active" : ""}>
-              <a href="/#Projects" onClick={() => handleLinkClick("/projects")}>projects</a>
-            </li>
-            <li className={activeLink === "/about" ? "active" : ""}>
-              <a href="/#About" onClick={() => handleLinkClick("/about")}>about</a>
-            </li>
-            <li className={activeLink === "/contact" ? "active" : ""}>
-              <a href="/#Contact" onClick={() => handleLinkClick("/contact")}>contact</a>
-            </li>
-            <li>
-
-              {/* Right: Dark mode + Button */}
-              <div className="flex items-center gap-4 ml-auto md:ml-4">
-               <DarkMode />
-                <a href="/#Contact" >
-                  <Button
-                    className="hidden lg:block"
-                    type="button"
-                    title="btn-light-dark"
-                  >
-                    let's talk
-                  </Button>
-                </a>
-
-              </div>
-            </li>
-          </ul>
-
         </div>
       </div>
 

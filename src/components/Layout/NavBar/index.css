@@ -2,6 +2,9 @@
 li.active a {
   color: var(--text_color);
 }
+ul{
+  margin-left: 2em;
+}
 /* Mobile navbar open styling - up to 767px sm */
 @media (max-width: 767px) {
 

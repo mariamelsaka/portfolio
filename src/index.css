@@ -48,8 +48,8 @@ padding-right: 0 !important;
 }
 
 [data-theme="dark"] {
- --btn-all-pro: #7C3AED;        
-  --btn-all-pro-hover: #6128c2;  
+ --btn-all-pro: #9D4EDD;      
+  --btn-all-pro-hover: #a764de;    
   --text-all-pro:white;
   --body_background: #1A1A2E;    
   --header-bg: #1A1A2E;    
