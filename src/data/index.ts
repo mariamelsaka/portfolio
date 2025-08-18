@@ -33,7 +33,7 @@ export const dataProject: ProjectTypes[] = [
     description:"A JavaScript-based app that lets users browse podcasts by category and play episodes on a dedicated details page. The app demonstrates dynamic data handling using local JSON, category filtering, and audio playback—all without a backend. Note: This app is not responsive.",
     category:"js-app",
     githubLink:"https://github.com/mariamelsaka/music-app",
-    liveDemoLink:"https://music-podcast-app.netlify.app/",
+    liveDemoLink:"https://mariamelsaka.github.io/music-app/",
     skills:["html","css","javascript"]  
   },
   {
