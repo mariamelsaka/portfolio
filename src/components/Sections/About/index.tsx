@@ -38,17 +38,21 @@ const About = () => {
           <div className="md:w-fit w-full" >
             <Paragraph>summary</Paragraph>
             <p className='text-gray-600 p-4  space-y-4  leading-relaxed'>
-              I am a Front-End Developer with over 2 years of experience specializing in HTML, CSS,TailwindCss, JavaScript, and Bootstrap.
-              In my current role as a Software Specialist-DXP at Giza Systems, I work on large-scale, enterprise-level projects
-              using Kore.ai, Liferay, and jbpm, improving user engagement and system efficiency. Recently, I began working with
-              React/Ts, building my first personal project to deepen my expertise in this framework. I have successfully delivered
-              responsive and user-friendly interfaces that led to enhanced customer satisfaction and user retention.
+              I am a Front-End Developer with over 3 years of experience specializing 
+              in HTML, CSS,Tailwind CSS, Bootstrap, JavaScript,TypeScript and React. 
+              In my current role as a Software Specialist-DXP at Giza Systems, I work on
+               large-scale, enterprise-level projects using Kore.ai, Liferay, and jbpm,
+                improving user engagement and system efficiency. For the last Year, 
+                I began working with React/Ts,Recently i started building my first 
+                personal project to deepen my expertise in this framework. 
+                I have successfully delivered responsive and user-friendly
+                 interfaces that led to enhanced customer satisfaction and user retention.
             </p>
           </div>
           <div>
             <Paragraph className='mb-3'>Experience</Paragraph>
                 <Experience position="Software Specialist - DXP" companyName="giza system 2024 - present">
-                  <li>Developed and maintained enterprise-level portals using Liferay, ensuring seamless functionality for +1 tasks.</li>
+                  <li>Developed and maintained enterprise-level portals using Liferay, ensuring seamless functionality for +1 projects.</li>
                   <li>Streamlined business processes by automating workflows with jbpm, reducing manual effort by 50% and improving operational efficiency</li>
                   <li>Implemented and integrated AI-powered chatbots using Kore.ai, enhancing customer service response time by 50%.</li>
                 </Experience>

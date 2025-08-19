@@ -23,7 +23,7 @@ export const dataProject: ProjectTypes[] = [
     image:IMAGES.videoscience,
     description:"A content platform for viewing science videos, podcasts, and blogs. Includes a full admin dashboard to manage content and users, with authentication and role-based access for admins and users.",
     category:"web-app",
-    githubLink:"https://github.com/mariamelsaka/egyscience",
+    githubLink:"https://github.com/mariamelsaka/VideoSCV11",
     liveDemoLink:"https://mariamelsaka.github.io/egyscience/" ,
     skills:["html","css","bootstrap 5"]  
   },
@@ -40,7 +40,7 @@ export const dataProject: ProjectTypes[] = [
     {
     title: "Music Podcast App",
     image:IMAGES.music,
-    description:"A JavaScript-based app that lets users browse podcasts by category and play episodes on a dedicated details page. The app demonstrates dynamic data handling using local JSON, category filtering, and audio playback—all without a backend. Note: This app is not responsive.",
+    description:"A JavaScript-based app that lets users browse podcasts by category and play episodes on a dedicated details page. The app demonstrates dynamic data handling using local JSON, category filtering, and audio playback—all without a backend.",
     category:"js-app",
     githubLink:"https://github.com/mariamelsaka/music-app",
     liveDemoLink:"https://mariamelsaka.github.io/music-app/",
