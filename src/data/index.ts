@@ -27,7 +27,17 @@ export const dataProject: ProjectTypes[] = [
     liveDemoLink:"https://mariamelsaka.github.io/egyscience/" ,
     skills:["html","css","bootstrap 5"]  
   },
-  {
+
+    {
+    title: "Online Quiz Maker",
+    image:IMAGES.quizMaker,
+    description:"A platform where admins can create quizzes via a dashboard, and users can take quizzes and view their progress. The project includes user authentication and authorization. Built using front-end technologies with optional Laravel back-end. \n Note: The deployed version does not support admin dashboard",
+    category:"web-app",
+    githubLink:"https://github.com/mariamelsaka/quizApp",
+    liveDemoLink:"https://quizmaker2.netlify.app/" ,
+    skills:["html","css","bootstrap 5","javascript","PHP","Laravel"]   
+  },
+    {
     title: "Music Podcast App",
     image:IMAGES.music,
     description:"A JavaScript-based app that lets users browse podcasts by category and play episodes on a dedicated details page. The app demonstrates dynamic data handling using local JSON, category filtering, and audio playback—all without a backend. Note: This app is not responsive.",
@@ -55,15 +65,7 @@ export const dataProject: ProjectTypes[] = [
     githubLink:"https://github.com/mariamelsaka/web-design-task",
     skills:["html","css","bootstrap 4"]  
   },
-  {
-    title: "Online Quiz Maker",
-    image:IMAGES.quizMaker,
-    description:"A platform where admins can create quizzes via a dashboard, and users can take quizzes and view their progress. The project includes user authentication and authorization. Built using front-end technologies with optional Laravel back-end. \n Note: The deployed version does not support admin dashboard",
-    category:"web-app",
-    githubLink:"https://github.com/mariamelsaka/quizApp",
-    liveDemoLink:"https://quizmaker2.netlify.app/" ,
-    skills:["html","css","bootstrap 5","javascript","PHP","Laravel"]   
-  },
+
   {
     title: "Graduation Project: Arabic Sign Language Educational Website",
     image:IMAGES.gradPro,
